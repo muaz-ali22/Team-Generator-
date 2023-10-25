@@ -9,12 +9,12 @@ export class AppComponent {
   title = 'TeamGenerator';
   newPersonName='';
   person:string[]=[];
-// onInput(person:string){
-// this.newPersonName=person;
-// }
+onInput(person:string){
+this.newPersonName=person;
+}
 
-//   addPerson(){
-//     this.person.push(this.newPersonName);
-//     console.log(this.person);
-//   }
+  addPerson(){
+    this.person.push(this.newPersonName);
+    console.log(this.person);
+  }
 }
