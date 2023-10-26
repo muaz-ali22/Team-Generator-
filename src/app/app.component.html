@@ -3,8 +3,7 @@
   <div class="ui card">
     <h1>Team Generator</h1>
     <ul class="list">
-      <li>Muaz Ali</li>
-      <li>Abdul Rehman</li>
+<li *ngFor="let person of persons " >{{person}}</li>
     </ul>
     <div class="add-member-container">
       <input #addPersonInput type="text" placeholder="Name" (input)="onInput(addPersonInput.value)">
