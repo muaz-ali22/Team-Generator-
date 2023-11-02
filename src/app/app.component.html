@@ -1,17 +1,17 @@
 <app-navbar></app-navbar>
 <div class="container">
-  <div class="ui card">
-    <h1>Team Generator</h1>
-    <ul class="list">
-<li *ngFor="let person of persons " >{{person}}</li>
-    </ul>
-    <div class="add-member-container">
-      <input #addPersonInput type="text" placeholder="Name" (input)="onInput(addPersonInput.value)">
-      <button (click)="addPerson()" >Add</button>
+    <div class="ui card">
+        <h1>Team Generator</h1>
+        <ul class="list">
+            <li *ngFor="let person of persons ">{{person}}</li>
+        </ul>
+        <div class="add-member-container">
+            <input #addPersonInput type="text" placeholder="Name" (input)="onInput(addPersonInput.value)" [value]="newPersonName">
+            <button (click)="addPerson()">Add</button>
+        </div>
+        <div class="input-container">
+            <input type="number" placeholder="Number of teams ">
+            <button>Generate</button>
+        </div>
     </div>
-  <div class="input-container">
-    <input type="number" placeholder="Number of teams ">
-    <button>Generate</button>
-  </div>
-  </div>
 </div>
