@@ -8,15 +8,19 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'TeamGenerator';
   newPersonName = '';
+  errorMessage = '';
   persons: string[] = [];
   onInput(person: string) {
     this.newPersonName = person;
-    console.log(this.newPersonName);
   }
 
   addPerson() {
+    if (!this.newPersonName) {
+      this.errorMessage = 'Please Enter a Name';
+      return;
+    }
+    this.errorMessage = '';
     this.persons.push(this.newPersonName);
     this.newPersonName = '';
-    console.log(this.persons);
   }
 }

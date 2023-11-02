@@ -13,5 +13,6 @@
             <input type="number" placeholder="Number of teams ">
             <button>Generate</button>
         </div>
+        <p *ngIf="errorMessage" class="error-msg">{{errorMessage}}</p>
     </div>
 </div>
