@@ -1,64 +1,88 @@
-.container{
+.container {
     padding: 4rem;
     width: 40rem;
     margin: 0 auto;
 }
-h1{
+
+h1 {
     font-size: 3rem;
 }
-.list{
+
+.list {
     padding: 1rem;
     width: 100%;
     height: 10rem;
-    background-color:  rgb(180,215,209);
-    border: 0.1rem solid rgb(19,136,143);
+    background-color: rgb(180, 215, 209);
+    border: 0.1rem solid rgb(19, 136, 143);
     overflow: auto;
 }
-.add-member-container input{
+
+.add-member-container input {
     display: flex;
     border: none;
     border-bottom: 0.1rem solid grey;
     margin-right: 0.5rem;
     width: 100%;
 }
-.add-member-container button{
+
+.add-member-container button {
     width: 100%;
     margin-top: 0.5rem;
     color: whitesmoke;
-    background-color:rgb(44,62,83);
+    background-color: rgb(44, 62, 83);
     border: none;
     font-size: 1rem;
     font-weight: 400;
     cursor: pointer;
 }
-.input-container{
+
+.input-container {
     margin: 2rem 0;
     display: flex;
     height: 2rem;
 }
-.input-container button{
+
+.input-container button {
     width: 50%;
-    background-color:rgb(44,62,83);
+    background-color: rgb(44, 62, 83);
     border: none;
     font-size: 1.1rem;
     cursor: pointer;
     font-weight: 400;
     color: whitesmoke;
 }
-.input-container input{
+
+.input-container input {
     width: 50%;
 }
-.card{
+
+.card {
     padding: 2rem;
     width: 100%;
-    background-color:rgb(180,215,209);
+    background-color: rgb(180, 215, 209);
 }
-.error-msg{
+
+.error-msg {
     color: red;
 }
-li{
+
+li {
     list-style: none;
     font-size: 1.2rem;
-    color:  rgb(19,136,143);
+    color: rgb(19, 136, 143);
     margin-bottom: 0.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+.team-container {
+    margin-bottom: 1rem;
+}
+
+.team-container ul {
+    padding: 1rem;
+    margin: 0;
+    background-color: rgb(180, 215, 209);
 }

@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'TeamGenerator';
+  i = 0;
   newPersonName = '';
   errorMessage = '';
   numberOfTeams: number | '' = '';
@@ -31,8 +32,14 @@ export class AppComponent {
 
   generateTeam() {
     if (!this.numberOfTeams || this.numberOfTeams <= 0) {
+      this.errorMessage = 'Invaild number of Teams';
       return;
     }
+    if (this.persons.length < this.numberOfTeams) {
+      this.errorMessage = 'Not Enough Members';
+      return;
+    }
+    this.errorMessage = '';
     const allMembers = [...this.persons];
 
     while (allMembers.length) {
@@ -47,6 +54,7 @@ export class AppComponent {
         }
       }
     }
-    console.log(this.teams);
+    this.persons = [];
+    this.numberOfTeams = '';
   }
 }
