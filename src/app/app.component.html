@@ -10,8 +10,8 @@
             <button (click)="addPerson()">Add</button>
         </div>
         <div class="input-container">
-            <input type="number" placeholder="Number of teams ">
-            <button>Generate</button>
+            <input #numberOfTeamsInput type="number" placeholder="Number of teams " (input)="onNumberOfTeamsInput(numberOfTeamsInput.value)" [value]="numberOfTeams">
+            <button (click)="generateTeam()">Generate</button>
         </div>
         <p *ngIf="errorMessage" class="error-msg">{{errorMessage}}</p>
     </div>
