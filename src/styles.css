@@ -1,5 +1,9 @@
 @import "semantic-ui-css/semantic.css";
-body{
-    
-    background-color:rgb(19,136,143);
+body {
+    background-color: rgb(19, 136, 143);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
 }
